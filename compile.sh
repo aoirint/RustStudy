@@ -5,5 +5,4 @@ docker run --rm -it \
     -w /work \
     -v "${PWD}:/work" \
     rust \
-    rustc ./test.rs -o test
-
+    rustc "$@"
